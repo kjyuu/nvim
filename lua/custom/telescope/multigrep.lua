@@ -36,7 +36,7 @@ local live_multigrep = function(opts)
   }):find()
 end
 M.setup = function()
-  vim.keymap.set("n", "<leader>fg", live_multigrep)
+  vim.keymap.set("n", "<leader>sg", live_multigrep, { desc = '[S]earch by [G]rep' })
 end
 
 return M
